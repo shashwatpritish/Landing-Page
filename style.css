@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	display: flex;
+	background-color: rgb(255, 240, 245);
+}
+
+.left, .right{
+	margin-top: 143px;
+	margin-left: 34px;
+}
+
+.left{
+	width: 30vw;
+}
+
+.right{
+	width: 30vw;
+	position: absolute;
+	right: 0;
+}
+
+
+.head h1{
+	font-family: 'Roboto', sans-serif;
+}
+
+.texts b u{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#enroll{
+	font-family: 'Oxygen', sans-serif;
+}
+
+#buy{
+	font-family: 'Roboto Slab',sans-serif;
+}
+
+#enroll, #buy{
+	font-size: 34px;
+	background: transparent;
+	padding: 4px;
+	color: dodgerblue;
+	border: 2px solid dodgerblue;
+	border-radius: 10px;
+	transition: all ease .3s;
+}
+
+#enroll:hover, #buy:hover{
+	color: white;
+	background-color: dodgerblue;
+}
+
+.right img{
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 360px){
+	.left, .rigth{
+		width: 50vw;
+	}
+	.btns{
+		display: flex;
+	}
+	.right{
+		position: absolute;
+		top: -182px;
+		left: -4vw;
+	}
+	.btns button{
+		font-size: 14px;
+		margin: 0 5px;
+	}
+}
